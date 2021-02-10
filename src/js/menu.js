@@ -12,9 +12,15 @@ let openedBlocks = 0;
 toggleShowBlocksButton.addEventListener('click', () => {
   const currentBlock = activeList.querySelectorAll('.menu__list__list__block');
   if (openedBlocks === currentBlock.length - 1) {
-    currentBlock.forEach((item, index) => index && item.classList.remove('active'));
     openedBlocks = 0;
     toggleShowBlocksButton.innerHTML = 'Show more';
+    window.scrollBy(
+      0,
+      menuList.getBoundingClientRect().top -
+        toggleShowBlocksButton.getBoundingClientRect().top +
+        120,
+    );
+    currentBlock.forEach((item, index) => index && item.classList.remove('active'));
     return;
   }
   currentBlock[openedBlocks + 1].classList.add('active');
