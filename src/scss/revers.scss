@@ -1,0 +1,263 @@
+.revers {
+  padding-bottom: 20px;
+  .form-wrapp {
+    width: auto;
+    padding-left: 70px;
+
+    .form-title {
+      text-align: center;
+
+      .title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 36px;
+        display: block;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+    }
+
+    @media (max-width: 1040px) {
+      padding-left: 0;
+    }
+  }
+
+  @media (max-width: 1230px) {
+    .content-block__image {
+      img {
+        width: 475px;
+        height: 475px;
+      }
+
+      .square {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+
+  @media (max-width: 1130px) {
+    .content-block {
+      padding-right: 70px;
+    }
+  }
+
+  @media (max-width: 1090px) {
+    .content-block__image {
+      img {
+        width: 450px;
+        height: 450px;
+      }
+
+      .square {
+        width: 170px;
+        height: 170px;
+      }
+    }
+  }
+
+  @media (max-width: 1060px) {
+    .content-block__image {
+      img {
+        width: 440px;
+        height: 440px;
+      }
+
+      .square {
+        width: 165px;
+        height: 165px;
+      }
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .content-block {
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .content-block {
+      &__image {
+        img {
+          width: 475px;
+          height: 475px;
+        }
+
+        .square {
+          width: 180px;
+          height: 180px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 670px) {
+    .content-block {
+      &__image {
+        img {
+          width: 435px;
+          height: 435px;
+        }
+
+        .square {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 570px) {
+    .content-block {
+      &__image {
+        img {
+          width: 395px;
+          height: 395px;
+        }
+
+        .square {
+          width: 100px;
+          height: 100px;
+          border-width: 15px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 460px) {
+    .content-block {
+      &__image {
+        img {
+          width: 345px;
+          height: 345px;
+        }
+
+        .square {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    .content-block {
+      &__image {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+
+        .square {
+          width: 80px;
+          height: 80px;
+          border-width: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 370px) {
+    .content-block {
+      &__image {
+        img {
+          width: 260px;
+          height: 260px;
+        }
+
+        .square {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+
+  &__form {
+    width: 564px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    &__input {
+      padding-left: 20px;
+      background-color: #e5e5e5;
+      font-family: 'Open Sans', sans-serif;
+      color: #33333381;
+      font-size: 14px;
+      font-weight: 400;
+      border: none;
+      border-radius: 5px;
+    }
+
+    &__button {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      background-color: #e5e5e5;
+      font-family: 'Open Sans', sans-serif;
+      color: #33333381;
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        background-color: #e8c300;
+      }
+    }
+
+    @media (max-width: 1340px) {
+      width: 464px;
+    }
+
+    @media (max-width: 1130px) {
+      width: 364px;
+    }
+
+    @media (max-width: 1040px) {
+      width: 564px;
+    }
+
+    @media (max-width: 680px) {
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      width: 364px;
+
+      &__input {
+        padding-left: 10px;
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      width: 300px;
+
+      &__input {
+        width: 140px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      width: 260px;
+
+      &__input {
+        width: 120px;
+      }
+    }
+  }
+
+  .opening-hours {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #33333381;
+    font-size: 12px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

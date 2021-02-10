@@ -1,0 +1,63 @@
+.team {
+  position: relative;
+  background: url('img/team/team-bg.png') no-repeat center center;
+  background-size: cover;
+  padding-bottom: 50px;
+
+  &__title {
+    display: block;
+    font-family: 'Open Sans';
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 50px 0 50px 0;
+  }
+
+  .content-block {
+    padding-top: 0;
+    padding-left: 125px;
+    color: #fff;
+
+    @media (max-width: 1040px) {
+      padding-left: 0;
+      flex-direction: column-reverse;
+    }
+
+    .square {
+      left: -10%;
+    }
+  }
+
+  .slider {
+    &__item {
+      opacity: 0;
+      transition: all 1.5s linear;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    &__dots {
+      display: flex;
+      justify-content: space-between;
+      width: 80px;
+      margin: 0 auto;
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #a1938a;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &.active {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

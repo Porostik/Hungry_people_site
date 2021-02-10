@@ -1,0 +1,19 @@
+.footer {
+  .copyright {
+    padding: 40px;
+    text-align: center;
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  @media (max-width: 900px) {
+    iframe {
+      height: 350px;
+    }
+  }
+}

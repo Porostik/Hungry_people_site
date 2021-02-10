@@ -1,0 +1,48 @@
+.select {
+  position: relative;
+
+  &__value {
+    padding: 21px 20px;
+    background: url('img/revers/arrow.svg') no-repeat;
+    background-position: 90% 50%;
+    background-color: #e5e5e5;
+    color: #33333381;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    @media (max-width: 680px) {
+      padding-left: 10px;
+      font-size: 12px;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    z-index: 1000;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &__item {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      padding: 20px 20px;
+      background-color: #e5e5e5;
+      color: #33333381;
+      cursor: pointer;
+
+      @media (max-width: 680px) {
+        padding-left: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+}
