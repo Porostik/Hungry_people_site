@@ -70,6 +70,7 @@
       display: flex;
       justify-content: space-between;
       padding: 0 40px;
+      overflow: auto;
 
       &__list {
         display: flex;
@@ -92,7 +93,7 @@
       }
 
       @media (max-width: 850px) {
-        padding: 30px 0 50px 0;
+        padding: 0;
         position: fixed;
         height: 100%;
         background-color: rgb(46, 46, 46);
@@ -100,7 +101,6 @@
         left: 100%;
         width: 100%;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         z-index: 2;
         transition: all 0.5s linear;
@@ -116,14 +116,14 @@
         }
 
         &__list {
-          padding: 0;
-          flex-grow: 0.1;
+          padding: 20px 0;
+          flex-grow: 0.4;
           flex-direction: column;
           text-align: center;
-          justify-content: center;
+          justify-content: space-between;
 
           &__item {
-            padding: 20px 0;
+            // padding: 20px 0;
             .nav-link {
               font-size: 10px;
             }
@@ -272,11 +272,6 @@
         &__item {
           width: 35px;
           height: 35px;
-
-          img {
-            width: 15px;
-            height: 15px;
-          }
         }
       }
 
